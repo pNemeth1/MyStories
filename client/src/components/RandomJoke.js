@@ -7,6 +7,7 @@ import JokeSection from './JokeSection';
 import JokeKey from '../config/config';
 import './Joke.scss';
 
+const joe = 'hh';
 
 
 const useJoke = () => {
