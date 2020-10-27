@@ -8,7 +8,6 @@ import Profile from './Profile';
 import Stories from './Stories';
 import StoryEdit from './StoryEdit';
 import ProtectedRoute from '../components/ProtectedRoute';
-import Card from './Card';
 
 import AuthContext from '../contexts/AuthContexts';
 

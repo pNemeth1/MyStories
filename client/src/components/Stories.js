@@ -7,7 +7,6 @@ import StoryForm from './StoryForm';
 import useStories from '../hooks/useStories';
 import './Story.scss';
 import './StoryForm.scss';
-import './Card.scss';
 
 
 

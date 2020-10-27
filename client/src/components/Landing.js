@@ -34,7 +34,6 @@ const Landing = () => {
         MyStories
       </h1>
       Share your stories and have them available whenever you need!
-      {/* <img className="ui fluid image" src="/content/GUT1.JPG"></img> */}
       <div className="ui placeholder segment">
         <div className="ui icon header">
           <i className="pencil alternate icon"></i>

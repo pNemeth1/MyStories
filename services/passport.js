@@ -1,7 +1,7 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const mongoose = require('mongoose');
-const keys = require('../config/keys');
+const keys = require('../config/gitConfig');
 
 const User = mongoose.model('users');
 
@@ -28,7 +28,6 @@ passport.use(
       const existingUser = await User.findOne({ googleId: profile.id });
 
       if (existingUser) {
-        console.log(profile.photos[0].value);
         return done(null, existingUser);
       }
 

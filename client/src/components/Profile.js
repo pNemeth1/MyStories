@@ -48,7 +48,7 @@ const Profile = ({ user }) => {
     const userStories = stories;
 
 
-    if (!user.data) { return <></> }
+    if (!user || !user.data) { return <></> }
 
 
     user = user.data;
