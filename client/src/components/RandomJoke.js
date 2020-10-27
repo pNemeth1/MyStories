@@ -4,7 +4,9 @@ import axios from 'axios';
 import {useState} from 'react';
 
 import JokeSection from './JokeSection';
+import JokeKey from '../config/config';
 import './Joke.scss';
+
 
 
 const useJoke = () => {
@@ -16,7 +18,7 @@ const useJoke = () => {
         joke = await axios.get('https://dad-jokes.p.rapidapi.com/random/joke', {
             'headers': {
                 "x-rapidapi-host": "dad-jokes.p.rapidapi.com",
-                "x-rapidapi-key": "4c82a35e46msh4230c3b0cceb061p1dc536jsnc91cabc490ab"
+                "x-rapidapi-key": JokeKey.dadJokeKey
             }
         }).then((joke) => {
             joke = joke.data.body[0];
